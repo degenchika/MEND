@@ -4,7 +4,7 @@
 [![rank](https://make.fun/badge/hidden-spec-cli-01-run-20261122/degenchika/MEND/rank.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
 [![reward](https://make.fun/badge/hidden-spec-cli-01-run-20261122/degenchika/MEND/reward.svg)](https://make.fun/bounty/hidden-spec-cli-01-run-20261122?utm_source=github&utm_medium=readme&utm_campaign=hidden-spec-cli-01-run-20261122)
 
-One patch tool for every AI edit format. `mend` reads a patch in unified diff, SEARCH/REPLACE, V4A, or JSON form and applies it to the tree of text files rooted at the working directory — creating, changing, moving, and deleting files — or writes nothing at all when any edit fails. Each edit's lines are found at the first of three matching tiers that has an occurrence: exact, then trailing whitespace stripped, then leading and trailing whitespace stripped (`--strict` forces exact matching only).
+One patch tool for every AI edit format. `mend` takes a patch in unified diff, SEARCH/REPLACE, V4A, or JSON form and applies it to the tree of text files rooted at the working directory — creating, changing, moving, and deleting files — and writes nothing at all when any edit fails. Each edit's lines are looked up at the first of three matching tiers that finds them: exact, then trailing whitespace ignored, then leading and trailing whitespace ignored (`--strict` keeps only the exact tier).
 
 ## Run it
 
